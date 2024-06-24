@@ -1,0 +1,36 @@
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+    border: 3px dashed #f1d1dd;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+
+    animation: spin 1.5s infinite;
+}
+
+.inner-spinner{
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    border: 3px double #9e4d6b;
+    animation: spin 1.5s infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    50% { transform: rotate(100deg) scale(1.2);}
+    100% {transform: rotate(360deg);}
+    
+}
